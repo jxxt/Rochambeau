@@ -52,7 +52,7 @@ body {
 .img-btn:hover {
     cursor: pointer;
     transform: translateY(-15px);
-  }
+}
 
 .img-btn img {
     width: 250px;
@@ -60,7 +60,7 @@ body {
 }
 
 .play-btn {
-    display: flex;  
+    display: flex;
     justify-content: center;
 }
 
@@ -85,15 +85,13 @@ body {
 
 
 
-body .content-2 {
-    display: none;
-}
+
 
 
 
 .content-2 {
     flex: 1;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
