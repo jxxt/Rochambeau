@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg548" height="400pt" width="400pt">
+  <g id="g834">
+    <path id="path693" stroke-linejoin="round" d="m130.58 19.228c0.85 0 152.63 249.29 152.63 249.29s-45.79 26.28-44.94 26.28c0.84 0-125.5-194.17-107.69-275.57z" fill-rule="evenodd" transform="matrix(-.97454 .22421 .22421 .97454 434.75 -39.908)" stroke="#000" stroke-width="10" fill="#dadadb"/>
+    <path id="path596" stroke-linejoin="bevel" d="m267.37 300.28s-45.41 119.06-37 136.74c-0.37 10.78-33.8 59.45-55.41 59.92-18.64 1.18-79.937-13.48-70.11-73.75 11.69-61.99 61.96-40.5 81.83-42.83 19.88-2.33 53.66-79.18 30.22-95.57 26.16 6.88 49.81 17.27 50.47 15.49zm-89.36 88.18c-67.79-17.88-80.966 88.46-20.59 94.7 67.7 2.88 67.13-87.13 20.59-94.7z" fill-rule="evenodd" stroke="#000" stroke-width="10" fill="#3f3f3f"/>
+    <path id="path674" stroke-linejoin="bevel" d="m130.58 19.228c0.85 0 152.63 249.29 152.63 249.29s-45.79 26.28-44.94 26.28c0.84 0-125.5-194.17-107.69-275.57z" fill-rule="evenodd" transform="matrix(.98459 .17488 -.17488 .98459 41.273 -35.371)" stroke="#000" stroke-width="10" fill="#dadadb"/>
+    <path id="path710" d="m81.4 200.68c-15.262 0.85-17.806 24.59 0 25.44 16.959-0.85 16.959-25.44 0-25.44z" transform="translate(161.59 57.169)" stroke="#000" stroke-width="6.25" fill="none"/>
+    <path id="path711" d="m69.53 209.16c1.696 0 16.958 15.26 16.958 15.26" transform="translate(161.59 57.169)" stroke="#000" stroke-width="6.25" fill="none"/>
+    <path id="path712" d="m76.313 203.23c0.848 0 16.111 15.26 16.111 15.26" transform="translate(161.59 57.169)" stroke="#000" stroke-width="6.25" fill="none"/>
+    <path id="path717" d="m311.6 21.282c0.85 0-61.05 186.54-61.05 186.54s6.63 12.8 9.17 11.95c2.54-0.84 58.66-189.16 51.88-198.49z" fill-opacity=".75" fill-rule="evenodd" stroke-width="1pt" fill="#e6ffff"/>
+    <path id="path718" d="m236.86 262.03l3.53-4.95 16.24 15.53-3.95 4.1-15.82-14.68z" fill-opacity=".31852" fill-rule="evenodd" transform="translate(-3.75 3.75)" stroke-width="1pt"/>
+    <path id="path590" stroke-linejoin="bevel" d="m319.25 379.54c66.8-21.27 85.32 84.27 25.33 93.53-67.47 6.29-71.43-83.63-25.33-93.53zm-93.68-83.57s51.34 116.61 43.83 134.7c0.91 10.75 36.75 57.67 58.36 57.06 18.67 0.23 79.15-17.5 66.31-77.19-14.8-61.33-63.92-37.34-83.89-38.66-19.97-1.33-57.57-76.38-34.98-93.93-25.79 8.19-48.88 19.76-49.63 18.02z" fill-rule="evenodd" stroke="#000" stroke-width="10" fill="#3f3f40"/>
+  </g>
+  <rdf:RDF xmlns="http://web.resource.org/cc/">
+    <Work rdf:about="">
+      <dc:title>Clipart by Nicu Buculei - book_01</dc:title>
+      <dc:rights>
+        <Agent>
+          <dc:title>Nicu Buculei</dc:title>
+        </Agent>
+      </dc:rights>
+      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      <license rdf:resource="http://web.resource.org/cc/PublicDomain"/>
+    </Work>
+    <License rdf:about="http://web.resource.org/cc/PublicDomain">
+      <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+      <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+      <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+    </License>
+  </rdf:RDF>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Scissors</dc:title>
+        <dc:date>2009-03-17T11:20:44</dc:date>
+        <dc:description>clip art, clipart, household, household, image, media, office, office, png, public domain, school, school, scissors, scissors, sewing, sewing, svg, tool, tool, </dc:description>
+        <dc:source>http://openclipart.org/detail/22372/scissors-by-nicubunu</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nicubunu</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>household</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>office</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>school</rdf:li>
+            <rdf:li>scissors</rdf:li>
+            <rdf:li>sewing</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>tool</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
