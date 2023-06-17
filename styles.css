@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gamja Flower', cursive;
+    color: black;
+}
+
+body {
+    height: 100vh;
+    background: #F5F5DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 70px;
+    text-align: center;
+}
+
+.header-hr {
+    border-style: dotted;
+    border-top: 2px black;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* body .content-1 {
+    display: none;
+} */
+
+.content-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+}
+
+.option-images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.play-btn {
+    display: flex;  
+    justify-content: center;
+}
+
+.play-btn button {
+    font-size: 40px;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.img-btn {
+    border: none;
+    background: none;
+}
+
+.img-btn img {
+    width: 250px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+body .content-2 {
+    display: none;
+}
+
+
+
+/* .content-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.score-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-heading {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.score {
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 740px;
+
+}
+
+.play-msg {
+    text-align: center;
+    font-size: 50px;
+}
+
+.content-2 .img-btn img {
+    width: 200px;
+    height: 150px;
+}
+
+.result-msg {
+    font-size: 50px;
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.footer-hr {
+    border-style: dotted;
+    border-top: 2px black;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.footer {
+    font-size: 40px;
+    text-align: center;
+}
