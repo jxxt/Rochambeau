@@ -1,10 +1,149 @@
+const container_1 = document.querySelector(".content-1")
+const container_2 = document.querySelector(".content-2")
+
+const play_btn = document.querySelector(".play-btn")
+play_btn.addEventListener("click", function () {
+    container_1.style.display = "none"
+    container_2.style.display = "flex"
+
+})
+
+
+
+let humanScore = 0
+let computerScore = 0
+
+let computerChoiceNum
+let humanChoiceNum
+
+const numberOfRounds = 5
+
+let i = 1
+
+const round_number = document.querySelector(".round-number")
+round_number.textContent = i
+
+console.log("i=" + i)
+
+const rockBtn = document.querySelector("#rock")
+
+rockBtn.addEventListener("click", (humanChoiceNum) => {
+    humanChoiceNum = 0
+    humanChoiceFunction(humanChoiceNum)    //passing the variable to the functuon bcoz in this event listener function, the value of the variable is changing, so i need t0 pass it to the function so that updated value is passed to the function
+    gameFunction(humanChoiceNum)
+
+})
+
+const paperBtn = document.querySelector("#paper")
+
+paperBtn.addEventListener("click", (humanChoiceNum) => {
+    humanChoiceNum = 1
+    humanChoiceFunction(humanChoiceNum)
+    gameFunction(humanChoiceNum)
+})
+
+const scissorsBtn = document.querySelector("#scissors")
+
+scissorsBtn.addEventListener("click", (humanChoiceNum) => {
+    humanChoiceNum = 2
+    humanChoiceFunction(humanChoiceNum)
+    gameFunction(humanChoiceNum)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+function humanChoiceFunction(humanChoiceNum) {
+    return humanChoiceNum
+}
+
+function computerChoiceFunction() {
+    computerChoiceNum = Math.floor(Math.random() * 3)
+    return computerChoiceNum
+}
+
+// function gameWinnerFunction() {
+
+//     if (humanScore == 5) {
+//         alert("human won")
+//     }
+
+//     else {
+//         alert("computer won")
+//     }
+// }
+
+function gameFunction(humanChoiceNum) {
+
+
+    computerChoiceFunction()
+    humanChoiceFunction(humanChoiceNum)
+
+
+
+    // if (humanScore == 5 || computerScore == 5) {
+    //     break
+    // }
+
+
+    // humanChoiceFunction(humanChoiceNum)
+
+
+    console.log(humanChoiceNum)
+    console.log(computerChoiceNum)
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let humanScore = 0
 // let computerScore = 0
 
 // let computerChoiceNum
 // let humanChoiceNum
 
-// let numberOfRounds = 5
+// const numberOfRounds = 5
 
 // function humanChoiceFunction() {
 //     let humanChoice
@@ -22,7 +161,6 @@
 // }
 
 // function computerChoiceFunction() {
-//     let computerChoice
 //     computerChoiceNum = Math.floor(Math.random() * 3)
 //     return computerChoiceNum
 // }
@@ -84,13 +222,3 @@
 // }
 
 // gameFunction()
-
-const container_1 = document.querySelector(".content-1")
-const container_2 = document.querySelector(".content-2")
-
-const play_btn = document.querySelector(".play-btn")
-play_btn.addEventListener("click", function () {
-    container_1.style.display = "none"
-    container_2.style.display = "flex"
-
-})
