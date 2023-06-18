@@ -27,7 +27,9 @@ body {
 
 
 
-
+/* body .content-1 {
+    display: none;
+} */
 
 
 .content-1 {
@@ -130,6 +132,63 @@ body {
     font-size: 50px;
     text-align: center;
 }
+
+
+
+
+
+.content-3-human {
+    flex: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.content-3-computer {
+    flex: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.greet-msg {
+    font-size: 90px;
+    margin-top: -30px;
+}
+
+.winner-declare {
+    font-size: 120px;
+    margin-top: -20px;
+}
+
+.meme-img {
+    display: flex;
+    gap: 60px;
+}
+
+.meme-img img {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.play-again-btn button {
+    margin-top: 30px;
+    font-size: 40px;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.play-again-btn button:hover {
+    cursor: pointer;
+    background-color: rgb(226, 195, 155);
+}
+
 
 
 
