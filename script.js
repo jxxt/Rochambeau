@@ -9,7 +9,6 @@ play_btn.addEventListener("click", function () {
 })
 
 
-
 let humanScore = 0
 let computerScore = 0
 
@@ -22,9 +21,6 @@ let i = 1
 
 const round_number = document.querySelector(".round-number")
 round_number.textContent = i
-
-console.log("i=" + i)
-
 
 
 const rockBtn = document.querySelector("#rock")
@@ -64,37 +60,18 @@ function computerChoiceFunction() {
     return computerChoiceNum
 }
 
-// function gameWinnerFunction() {
-
-//     if (humanScore == 5) {
-//         alert("human won")
-//     }
-
-//     else {
-//         alert("computer won")
-//     }
-// }
 
 function gameFunction(humanChoiceNum, i) {
 
     computerChoiceFunction()
     humanChoiceFunction(humanChoiceNum)
 
-
     const round_number = document.querySelector(".round-number")
     round_number.textContent = i
-
-    console.log("i=" + i)
 
     const result_msg = document.querySelector(".result-msg")
     const human_score = document.querySelector(".human-score")
     const computer_score = document.querySelector(".computer-score")
-
-
-    console.log(humanChoiceNum)
-    console.log(computerChoiceNum)
-
-
 
     if (humanChoiceNum == 0 && computerChoiceNum == 1) {
         computerScore++
@@ -133,12 +110,15 @@ function gameFunction(humanChoiceNum, i) {
     human_score.textContent = humanScore
     computer_score.textContent = computerScore
 
-    console.log(humanScore)
-    console.log(computerScore)
-
-
-
+    if (computerScore == 5 || humanScore == 5) {
+        finalResult(humanScore, computerScore)
+    }
 }
+
+function finalResult(humanScore, computerScore) {
+    container_2.style.display = "none"
+}
+
 
 
 
