@@ -25,12 +25,15 @@ round_number.textContent = i
 
 console.log("i=" + i)
 
+
+
 const rockBtn = document.querySelector("#rock")
 
 rockBtn.addEventListener("click", (humanChoiceNum) => {
     humanChoiceNum = 0
-    humanChoiceFunction(humanChoiceNum)    //passing the variable to the functuon bcoz in this event listener function, the value of the variable is changing, so i need t0 pass it to the function so that updated value is passed to the function
-    gameFunction(humanChoiceNum)
+    humanChoiceFunction(humanChoiceNum)   //passing the variable to the functuon bcoz in this event listener function, the value of the variable is changing, so i need t0 pass it to the function so that updated value is passed to the function
+    i++
+    gameFunction(humanChoiceNum, i)
 
 })
 
@@ -39,7 +42,8 @@ const paperBtn = document.querySelector("#paper")
 paperBtn.addEventListener("click", (humanChoiceNum) => {
     humanChoiceNum = 1
     humanChoiceFunction(humanChoiceNum)
-    gameFunction(humanChoiceNum)
+    i++
+    gameFunction(humanChoiceNum, i)
 })
 
 const scissorsBtn = document.querySelector("#scissors")
@@ -47,20 +51,9 @@ const scissorsBtn = document.querySelector("#scissors")
 scissorsBtn.addEventListener("click", (humanChoiceNum) => {
     humanChoiceNum = 2
     humanChoiceFunction(humanChoiceNum)
-    gameFunction(humanChoiceNum)
+    i++
+    gameFunction(humanChoiceNum, i)
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 function humanChoiceFunction(humanChoiceNum) {
     return humanChoiceNum
@@ -82,20 +75,20 @@ function computerChoiceFunction() {
 //     }
 // }
 
-function gameFunction(humanChoiceNum) {
-
+function gameFunction(humanChoiceNum, i) {
 
     computerChoiceFunction()
     humanChoiceFunction(humanChoiceNum)
 
 
+    const round_number = document.querySelector(".round-number")
+    round_number.textContent = i
 
-    // if (humanScore == 5 || computerScore == 5) {
-    //     break
-    // }
+    console.log("i=" + i)
 
-
-    // humanChoiceFunction(humanChoiceNum)
+    const result_msg = document.querySelector(".result-msg")
+    const human_score = document.querySelector(".human-score")
+    const computer_score = document.querySelector(".computer-score")
 
 
     console.log(humanChoiceNum)
@@ -103,6 +96,45 @@ function gameFunction(humanChoiceNum) {
 
 
 
+    if (humanChoiceNum == 0 && computerChoiceNum == 1) {
+        computerScore++
+        result_msg.textContent = "Paper Blocks Rock, computer won the round!"
+    }
+
+    else if (humanChoiceNum == 1 && computerChoiceNum == 2) {
+        computerScore++
+        result_msg.textContent = "Scissors cut Paper, computer won the round!"
+    }
+
+    else if (humanChoiceNum == 2 && computerChoiceNum == 0) {
+        computerScore++
+        result_msg.textContent = "Rock smashes Scissors, computer won the round!"
+    }
+
+    else if (humanChoiceNum == 1 && computerChoiceNum == 0) {
+        humanScore++
+        result_msg.textContent = "Paper Blocks Rock, you won the round!"
+    }
+
+    else if (humanChoiceNum == 2 && computerChoiceNum == 1) {
+        humanScore++
+        result_msg.textContent = "Scissors cut Paper, you won the round!"
+    }
+
+    else if (humanChoiceNum == 0 && computerChoiceNum == 2) {
+        humanScore++
+        result_msg.textContent = "Rock smashes Scissors, you won the round!"
+    }
+
+    else if (humanChoiceNum == computerChoiceNum) {
+        result_msg.textContent = "It's a tie!"
+    }
+
+    human_score.textContent = humanScore
+    computer_score.textContent = computerScore
+
+    console.log(humanScore)
+    console.log(computerScore)
 
 
 
