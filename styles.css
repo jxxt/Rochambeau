@@ -13,6 +13,7 @@ body {
     justify-content: space-between;
 }
 
+
 .header {
     font-size: 70px;
     text-align: center;
@@ -24,12 +25,6 @@ body {
     width: 500px;
     margin: 0 auto;
 }
-
-
-
-/* body .content-1 {
-    display: none;
-} */
 
 
 .content-1 {
@@ -68,6 +63,7 @@ body {
 
 .play-btn button {
     font-size: 40px;
+    background-color: rgb(225, 185, 134);
     border-radius: 10px;
     border: 3px solid black;
     padding: 10px;
@@ -76,19 +72,8 @@ body {
 
 .play-btn button:hover {
     cursor: pointer;
-    background-color: rgb(226, 195, 155);
+    background-color: rgb(207, 160, 74);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .content-2 {
@@ -134,9 +119,6 @@ body {
 }
 
 
-
-
-
 .content-3-human {
     flex: 1;
     display: none;
@@ -178,6 +160,7 @@ body {
 .play-again-btn button {
     margin-top: 30px;
     font-size: 40px;
+    background-color: rgb(225, 185, 134);
     border-radius: 10px;
     border: 3px solid black;
     padding: 10px;
@@ -186,18 +169,8 @@ body {
 
 .play-again-btn button:hover {
     cursor: pointer;
-    background-color: rgb(226, 195, 155);
+    background-color: rgb(207, 160, 74);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .footer-hr {

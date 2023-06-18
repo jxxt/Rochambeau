@@ -62,10 +62,12 @@ scissorsBtn.addEventListener("click", (humanChoiceNum) => {
 })
 
 function humanChoiceFunction(humanChoiceNum) {
+
     return humanChoiceNum
 }
 
 function computerChoiceFunction() {
+
     computerChoiceNum = Math.floor(Math.random() * 3)
     return computerChoiceNum
 }
@@ -81,36 +83,47 @@ function gameFunction(humanChoiceNum, i) {
 
     if (humanChoiceNum == 0 && computerChoiceNum == 1) {
         computerScore++
-        result_msg.textContent = "Paper Blocks Rock, computer won the round!"
+        result_msg.textContent = "Computer chose Paper, computer won the round!"
     }
 
     else if (humanChoiceNum == 1 && computerChoiceNum == 2) {
         computerScore++
-        result_msg.textContent = "Scissors cut Paper, computer won the round!"
+        result_msg.textContent = "Computer chose Scissors, computer won the round!"
     }
 
     else if (humanChoiceNum == 2 && computerChoiceNum == 0) {
         computerScore++
-        result_msg.textContent = "Rock smashes Scissors, computer won the round!"
+        result_msg.textContent = "Computer chose Rock, computer won the round!"
     }
 
     else if (humanChoiceNum == 1 && computerChoiceNum == 0) {
         humanScore++
-        result_msg.textContent = "Paper Blocks Rock, you won the round!"
+        result_msg.textContent = "Computer chose Rock, you won the round!"
     }
 
     else if (humanChoiceNum == 2 && computerChoiceNum == 1) {
         humanScore++
-        result_msg.textContent = "Scissors cut Paper, you won the round!"
+        result_msg.textContent = "Computer chose Paper, you won the round!"
     }
 
     else if (humanChoiceNum == 0 && computerChoiceNum == 2) {
         humanScore++
-        result_msg.textContent = "Rock smashes Scissors, you won the round!"
+        result_msg.textContent = "Computer chose Scissors, you won the round!"
     }
 
     else if (humanChoiceNum == computerChoiceNum) {
-        result_msg.textContent = "It's a tie!"
+
+        if (computerChoiceNum == 0) {
+            result_msg.textContent = "Computer also chose Rock, it's a tie!"
+        }
+
+        else if (computerChoiceNum == 1) {
+            result_msg.textContent = "Computer also chose Paper, it's a tie!"
+        }
+
+        else if (computerChoiceNum == 2) {
+            result_msg.textContent = "Computer also chose Scissors, it's a tie!"
+        }
     }
 
     human_score.textContent = humanScore
@@ -130,7 +143,6 @@ function finalResult(humanScore, computerScore) {
 
     const container_3_2 = document.querySelector(".content-3-computer")
     const play_again_btn_2 = document.querySelector(".content-3-computer .play-again-btn")
-
 
     if (humanScore == numberOfRounds) {
         i = 1
@@ -154,23 +166,3 @@ function finalResult(humanScore, computerScore) {
         })
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
