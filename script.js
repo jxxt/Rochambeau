@@ -13,6 +13,8 @@ const container_2 = document.querySelector(".content-2")
 
 const round_number = document.querySelector(".round-number")
 
+const result_msg = document.querySelector(".result-msg")
+
 const human_score = document.querySelector(".human-score")
 const computer_score = document.querySelector(".computer-score")
 
@@ -31,6 +33,8 @@ play_btn.addEventListener("click", function () {
 
     human_score.textContent = humanScore
     computer_score.textContent = computerScore
+
+    result_msg.textContent = "\u00A0"   //balnk space
 })
 
 const rockBtn = document.querySelector("#rock")
@@ -78,8 +82,6 @@ function gameFunction(humanChoiceNum, i) {
     humanChoiceFunction(humanChoiceNum)
 
     round_number.textContent = i
-
-    const result_msg = document.querySelector(".result-msg")
 
     if (humanChoiceNum == 0 && computerChoiceNum == 1) {
         computerScore++
