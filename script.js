@@ -1,27 +1,37 @@
-const container_1 = document.querySelector(".content-1")
-const container_2 = document.querySelector(".content-2")
+let i
 
-const play_btn = document.querySelector(".play-btn")
-play_btn.addEventListener("click", function () {
-    container_1.style.display = "none"
-    container_2.style.display = "flex"
-
-})
-
-
-let humanScore = 0
-let computerScore = 0
+let humanScore
+let computerScore
 
 let computerChoiceNum
 let humanChoiceNum
 
 const numberOfRounds = 5
 
-let i = 1
+const container_1 = document.querySelector(".content-1")
+const container_2 = document.querySelector(".content-2")
 
 const round_number = document.querySelector(".round-number")
-round_number.textContent = i
 
+const human_score = document.querySelector(".human-score")
+const computer_score = document.querySelector(".computer-score")
+
+const play_btn = document.querySelector(".play-btn")
+
+play_btn.addEventListener("click", function () {
+
+    i = 1                          //setting everything to default value when play btn is clicked
+    humanScore = 0
+    computerScore = 0
+
+    container_1.style.display = "none"
+    container_2.style.display = "flex"
+
+    round_number.textContent = i
+
+    human_score.textContent = humanScore
+    computer_score.textContent = computerScore
+})
 
 const rockBtn = document.querySelector("#rock")
 
@@ -60,18 +70,14 @@ function computerChoiceFunction() {
     return computerChoiceNum
 }
 
-
 function gameFunction(humanChoiceNum, i) {
 
     computerChoiceFunction()
     humanChoiceFunction(humanChoiceNum)
 
-    const round_number = document.querySelector(".round-number")
     round_number.textContent = i
 
     const result_msg = document.querySelector(".result-msg")
-    const human_score = document.querySelector(".human-score")
-    const computer_score = document.querySelector(".computer-score")
 
     if (humanChoiceNum == 0 && computerChoiceNum == 1) {
         computerScore++
@@ -110,13 +116,43 @@ function gameFunction(humanChoiceNum, i) {
     human_score.textContent = humanScore
     computer_score.textContent = computerScore
 
-    if (computerScore == 5 || humanScore == 5) {
+    if (computerScore == numberOfRounds || humanScore == numberOfRounds) {
         finalResult(humanScore, computerScore)
     }
 }
 
 function finalResult(humanScore, computerScore) {
+
     container_2.style.display = "none"
+
+    const container_3_1 = document.querySelector(".content-3-human")
+    const play_again_btn_1 = document.querySelector(".content-3-human .play-again-btn")
+
+    const container_3_2 = document.querySelector(".content-3-computer")
+    const play_again_btn_2 = document.querySelector(".content-3-computer .play-again-btn")
+
+
+    if (humanScore == numberOfRounds) {
+        i = 1
+        humanScore = 0
+        computerScore = 0
+        container_3_1.style.display = "flex"
+        play_again_btn_1.addEventListener("click", function () {
+            container_3_1.style.display = "none"
+            container_1.style.display = "flex"
+        })
+    }
+
+    else if (computerScore == numberOfRounds) {
+        i = 1
+        humanScore = 0
+        computerScore = 0
+        container_3_2.style.display = "flex"
+        play_again_btn_2.addEventListener("click", function () {
+            container_3_2.style.display = "none"
+            container_1.style.display = "flex"
+        })
+    }
 }
 
 
@@ -138,99 +174,3 @@ function finalResult(humanScore, computerScore) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// let humanScore = 0
-// let computerScore = 0
-
-// let computerChoiceNum
-// let humanChoiceNum
-
-// const numberOfRounds = 5
-
-// function humanChoiceFunction() {
-//     let humanChoice
-//     humanChoice = prompt("choose from Rock, Paper and Scissors")
-//     if (humanChoice == "r") {
-//         humanChoiceNum = 0
-//     }
-//     else if (humanChoice == "p") {
-//         humanChoiceNum = 1
-//     }
-//     else if (humanChoice == "s") {
-//         humanChoiceNum = 2
-//     }
-//     return humanChoiceNum
-// }
-
-// function computerChoiceFunction() {
-//     computerChoiceNum = Math.floor(Math.random() * 3)
-//     return computerChoiceNum
-// }
-
-// function gameWinnerFunction() {
-
-//     if (humanScore == 5) {
-//         alert("human won")
-//     }
-
-//     else {
-//         alert("computer won")
-//     }
-// }
-
-// function gameFunction() {
-
-//     for (let i = 1; i > 0; i++) {
-
-//         if (humanScore == 5 || computerScore == 5) {
-//             gameWinnerFunction()
-//             break
-//         }
-
-//         else {
-
-//             humanChoiceFunction()
-//             computerChoiceFunction()
-
-//             if (humanChoiceNum == 0 && computerChoiceNum == 1) {
-//                 computerScore++
-//             }
-
-//             else if (humanChoiceNum == 1 && computerChoiceNum == 2) {
-//                 computerScore++
-//             }
-
-//             else if (humanChoiceNum == 2 && computerChoiceNum == 0) {
-//                 computerScore++
-//             }
-
-//             else if (humanChoiceNum == 1 && computerChoiceNum == 0) {
-//                 humanScore++
-//             }
-
-//             else if (humanChoiceNum == 2 && computerChoiceNum == 1) {
-//                 humanScore++
-//             }
-
-//             else if (humanChoiceNum == 0 && computerChoiceNum == 2) {
-//                 humanScore++
-//             }
-
-//             else if (humanChoiceNum == computerChoiceNum) {
-//                 continue
-//             }
-//         }
-//     }
-// }
-
-// gameFunction()
